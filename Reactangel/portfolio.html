@@ -27,9 +27,65 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .portfolio-item video {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for the filter-reels container */
+.filter-reels {
+  display: flex; /* Makes it a flex container */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 20px; /* Adds spacing between reels */
+  justify-content: center; /* Centers the reels horizontally */
+  padding: 20px; /* Adds padding around the container */
+  background-color: #f1f1f1; /* Light grey background for reels section */
+  border-radius: 8px; /* Soft rounded corners for the section */
+}
+
+/* Individual reel cards */
+.filter-reel-item {
+  flex: 1 1 calc(25% - 40px); /* 4 reels per row, adjusts responsively */
+  max-width: calc(25% - 40px); /* Limits width of each reel */
+  background: #ffffff; /* White background for reels */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 10px; /* Rounded corners for individual reels */
+  overflow: hidden; /* Clips overflowing content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for reels */
+.filter-reel-item:hover {
+  transform: scale(1.05); /* Slightly enlarges the reel on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+}
+
+/* Media content for reels */
+.filter-reel-item video {
+  width: 100%; /* Ensures video takes the full width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Prevents extra space around the video */
+}
+
+/* Title or caption for reels */
+.filter-reel-item .caption {
+  padding: 10px; /* Adds padding around the text */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #333; /* Dark text color */
+  text-align: center; /* Centers the text */
+}
+
+
+  </style>
+  
+
 </head>
 
 <body class="portfolio-page">
+ 
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -80,105 +136,243 @@
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-instagram">Instagram</li>
             <li data-filter=".filter-facebook">Facebook</li>
-            <li data-filter=".filter-branding">WebSite</li>
+            <li data-filter=".filter-website">Website</li>
+            <li data-filter=".filter-reels">Reels</li>
           </ul><!-- End Portfolio Filters -->
+
+            <!-- Reels -->
+            
+        <!---->
+
+          <!-- insta posts -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+              <img src="assets/img/portfolio/insta/1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Post 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Insta Post</h4>
+                <p></p>
+                <a href="assets/img/portfolio/insta/1.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End insta Item -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram ">
+                <img src="assets/img/portfolio/insta/2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Insta Post</h4>
+                  <p></p>
+                  <a href="assets/img/portfolio/insta/2.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div> <!--end insta item-->
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+                  <img src="assets/img/portfolio/insta/Dominos pizza.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Insta Post</h4>
+                    <p>Dominos Pizza</p>
+                    <a href="assets/img/portfolio/insta/Dominos pizza.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div> <!--end insta item-->
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+                    <img src="assets/img/portfolio/insta/hokparty final.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>Insta Post </h4>
+                      <p>Hok Party</p>
+                      <a href="assets/img/portfolio/insta/hokparty final.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div> <!--end insta item-->
+                  <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+                      <img src="assets/img/portfolio/insta/luchi aloodum.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Insta Post</h4>
+                        <p>Luchi Aloodum</p>
+                        <a href="assets/img/portfolio/insta/luchi aloodum.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div> <!--end insta item-->
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+                        <img src="assets/img/portfolio/insta/poster3(1).jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>Insta Post</h4>
+                          <p></p>
+                          <a href="assets/img/portfolio/insta/poster3(1).jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                          <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                      </div> <!--end insta item-->
+                      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+                          <img src="assets/img/portfolio/insta/idli 4.jpg" class="img-fluid" alt="">
+                          <div class="portfolio-info">
+                            <h4>Insta Post</h4>
+                            <p>Idli</p>
+                            <a href="assets/img/portfolio/insta/idli 4.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                          </div>
+                        </div> <!--end insta item-->
+                        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
+                            <img src="assets/img/portfolio/insta/3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                              <h4>Insta Post</h4>
+                              <p></p>
+                              <a href="assets/img/portfolio/insta/3.jpg" title="instagram 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                          </div> <!--end insta item-->
+            
+          
+        
+      
+    
+  
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/facebook/Burger 1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="instagram 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>Fb Post</h4>
+                <p>Burger</p>
+                <a href="assets/img/portfolio/facebook/Burger 1.jpg" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/Burger Instagram Post Design Template.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p>Burger </p>
+                <a href="assets/img/portfolio/facebook/Burger Instagram Post Design Template.jpg" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/Food club Sandwich.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p>Sandwitch</p>
+                <a href="assets/img/portfolio/facebook/Food club Sandwich.jpg" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/kurkure poster.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p>Kurkure</p>
+                <a href="assets/img/portfolio/facebook/kurkure poster.jpg" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/milkshake.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p>MilkShake</p>
+                <a href="assets/img/portfolio/facebook/milkshake.jpg" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/pasta.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p>Pasta</p>
+                <a href="assets/img/portfolio/facebook/pasta.png" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/photo 2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p></p>
+                <a href="assets/img/portfolio/facebook/photo 2.png" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/photo 3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p></p>
+                <a href="assets/img/portfolio/facebook/photo 3.png" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-facebook">
+              <img src="assets/img/portfolio/facebook/starbucks.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Fb Post</h4>
+                <p>starbucks</p>
+                <a href="assets/img/portfolio/facebook/starbucks.jpg" title="facebook 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Facebook Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/website/Screenshot 2025-03-29 143350.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="facebook 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>website 1</h4>
+                <p>Hok Party</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="website 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://hokparty.in/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
+           
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-instagram">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+            
           </div><!-- End Portfolio Container -->
+
+
 
         </div>
 
+        <div class="container">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+            
+            <video class="img-fluid" controls>
+              <source src="assets/img/portfolio/insta/42fd3f55c7f95e549c3ed2de94664209.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="portfolio-info">
+              <h4>Reels Video</h4>
+              <p>Sample Reel</p>
+           
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-reels">
+           
+            <video class="img-fluid" controls>
+              <source src="assets/img/portfolio/insta/vidio2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="portfolio-info">
+              <h4>Reels Video</h4>
+              <p>Sample Reel</p>
+           
+            </div>
+          </div> 
+        </div>
+
+      </div>
+
+    </div>
+  
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -221,7 +415,15 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js">
+
+
+  </script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ 
+
+  
+
 
 </body>
 

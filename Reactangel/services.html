@@ -56,7 +56,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: linear-gradient(145deg, #ffffff, #f0f4fc);
+      background: linear-gradient(145deg, #ffffff, #dce7f9, #e3f2fd);
       width: 90%;
       max-width: 450px;
       padding: 30px 20px;
@@ -66,11 +66,18 @@
       text-align: left; /* Align text to the left */
     }
 
-    .popup-content h3 {
-      font-size: 32px; /* Increased font size for title */
-      color: #333;
+    .popup-content h6 {
+      font-size: 18px; /* Increased font size for title */
+      color:green;
       margin-bottom: 20px;
       font-weight: bold; /* Bold text */
+    }
+    .popup-content h2 {
+      font-size: 32px; /* Increased font size for title */
+      color:chocolate;
+      margin-bottom: 20px;
+      font-weight: bold; /* Bold text */
+      
     }
 
     .popup-content p {
@@ -114,7 +121,7 @@
       cursor: pointer;
       font-size: 20px; /* Bigger text size for button */
       font-weight: bold; /* Bold text */
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
       text-align: center;
     }
 
@@ -418,7 +425,7 @@
                 <li><i class="fas fa-users-cog"></i> Audience analysis</li>
                 <li><i class="fas fa-search-dollar"></i> Competitor research</li>
                 <li><i class="fas fa-layer-group"></i> Content pillars</li>
-                <li><i class="fas fa-trending-up"></i> Trend adaptation</li>
+                <li><i class="fas fa-chart-line"></i> Trend adaptation</li>
                 <li><i class="fas fa-check-circle"></i> Performance audits</li>
               </ul>
             `;
@@ -434,30 +441,36 @@
             `;
           } else if (serviceTitle === "Content Creation") {
             serviceDescription = `
-              <h4>1. Social Media Design</h4>
+              <h6 style="display: flex; align-items: center; font-size: 1.2rem; font-weight: bold;">
+               <i class="fas fa-bullhorn" style="color: #007bff; margin-right: 10px;"></i>
+                 Advertising and Marketing Materials</h6>
               <ul>
                 <li><i class="fas fa-image"></i> Social media posts and stories</li>
                 <li><i class="fas fa-image"></i> Cover photos and banners</li>
                 <li><i class="fas fa-ad"></i> Ad creatives for Facebook, Instagram</li>
               </ul>
-              <h4>2. Advertising and Marketing Materials</h4>
+                     <h6 style="display: flex; align-items: center; font-size: 1.2rem; font-weight: bold;">
+                     <i class="fas fa-bullhorn" style="color: #007bff; margin-right: 10px;">
+                     </i>Advertising and Marketing Materials</h6>
               <ul>
-                <li><i class="fas fa-bill"></i> Billboards and hoardings</li>
+                <li><i class="fas fa-ad"></i> Billboards and hoardings</li>
                 <li><i class="fas fa-envelope"></i> Email templates and newsletters</li>
                 <li><i class="fas fa-chart-pie"></i> Infographics</li>
               </ul>
-              <h4>3. Social Media Videos</h4>
+                  <h6 style="display: flex; align-items: center; font-size: 1.2rem; font-weight: bold;">
+                  <i class="fas fa-bullhorn" style="color: #007bff; margin-right: 10px;">
+                  </i>Social Media Videos</h6>
               <ul>
                 <li><i class="fas fa-video"></i> Reels, shorts</li>
                 <li><i class="fas fa-video"></i> Video ads</li>
-                <li><i class="fas fa-trending-up"></i> Trend-based content</li>
+                <li><i class="fas fa-wave-square"></i> Trend-based content</li>
               </ul>
             `;
           } else {
             serviceDescription = item.querySelector("p").innerText;
           }
   
-          popupText.innerHTML = `<strong>${serviceTitle}</strong>: ${serviceDescription}`;
+          popupText.innerHTML = `<h2>${serviceTitle}<h2> ${serviceDescription}`;
           popup.classList.add("active");
           overlay.classList.add("active");
         });
